@@ -23,7 +23,6 @@ namespace PackageExpress{
             double height = ConvertToDouble("Please enter the package height:");
 
             // Prompt the user for the package length.
-            Console.WriteLine();
             double length = ConvertToDouble("Please enter the package length:");
 
             // Calculate the sum of the dimensions and check if the total exceeds 50
@@ -45,7 +44,7 @@ namespace PackageExpress{
         }
 
         // using double.TryParse instead of Convert.ToDouble,
-        // so the program doesn’t crash if someone types letters instead of a numbe
+        // so the program doesn’t crash if someone types letters instead of a number
         static double ConvertToDouble(string str) {
             Console.WriteLine(str);
 
